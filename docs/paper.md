@@ -4,7 +4,7 @@ author: "Rowan Brad Quni"
 date: "2026-07-21"
 license: "QNFO Unified License Agreement (QNFO-ULA)"
 doi: "10.5281/zenodo.21480756"
-status: "draft"
+status: "published"
 ---
 
 **Author:** Rowan Brad Quni | **Date:** 2026-07-21 | **License:** QNFO-ULA: https://legal.qnfo.org/
