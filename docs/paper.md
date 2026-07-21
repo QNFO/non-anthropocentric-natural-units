@@ -3,7 +3,7 @@ title: "Non-Anthropocentric Natural Units: From the Bekenstein Bound to Ostrowsk
 author: "Rowan Brad Quni"
 date: "2026-07-21"
 license: "QNFO Unified License Agreement (QNFO-ULA)"
-doi: "10.5281/zenodo.XXXXXXXXX"
+doi: "10.5281/zenodo.21480756"
 status: "draft"
 ---
 

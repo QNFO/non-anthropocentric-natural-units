@@ -1,0 +1,13 @@
+{
+  "concept_doi": "10.5281/zenodo.21480755",
+  "latest_deposit_id": "21480756",
+  "versions": [
+    {
+      "doi": "10.5281/zenodo.21480756",
+      "deposit_id": "21480756",
+      "tag": "v1.0",
+      "published_at": "2026-07-21",
+      "files": ["paper.md", "paper.pdf", "README.md", "PROVENANCE-BUNDLE.zip"]
+    }
+  ]
+}
