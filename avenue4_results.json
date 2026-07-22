@@ -1,0 +1,12 @@
+{
+  "avenue": 4,
+  "date": "2026-07-22",
+  "status": "SPECULATIVE — per v3.0 pre-registration §6",
+  "scales": {
+    "LambdaQCD": 0.217,
+    "MZ": 91.1876,
+    "MGUT": 20000000000000000,
+    "MPl": 12208900000000000000
+  },
+  "verdict": "No connection found between BT tree structure of energy scales and the v2.0 hint (976/919). Energy-scale cross-ratios show no special rational approximations beyond Dirichlet expectations."
+}
