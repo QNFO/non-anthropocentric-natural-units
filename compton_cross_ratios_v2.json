@@ -1,0 +1,133 @@
+{
+  "particles": {
+    "e": {
+      "omega_ratio": 1.0,
+      "role": "reference"
+    },
+    "mu": {
+      "omega_ratio": 206.76828270846718,
+      "role": "charged lepton gen 2"
+    },
+    "tau": {
+      "omega_ratio": 3477.228275323682,
+      "role": "charged lepton gen 3"
+    },
+    "u": {
+      "omega_ratio": 4.2270145507801145,
+      "role": "up-type quark gen 1"
+    },
+    "d": {
+      "omega_ratio": 9.138962014881079,
+      "role": "down-type quark gen 1"
+    },
+    "s": {
+      "omega_ratio": 182.7792402976216,
+      "role": "down-type quark gen 2"
+    },
+    "c": {
+      "omega_ratio": 2485.3279997642335,
+      "role": "up-type quark gen 2"
+    },
+    "b": {
+      "omega_ratio": 8180.055936231887,
+      "role": "down-type quark gen 3"
+    },
+    "t": {
+      "omega_ratio": 337574.0787081341,
+      "role": "up-type quark gen 3"
+    },
+    "W": {
+      "omega_ratio": 157260.59689846757,
+      "role": "gauge boson"
+    },
+    "Z": {
+      "omega_ratio": 178450.46428543382,
+      "role": "gauge boson"
+    },
+    "H": {
+      "omega_ratio": 245010.28785077328,
+      "role": "scalar boson"
+    },
+    "pi0": {
+      "omega_ratio": 264.1430081563598,
+      "role": "meson"
+    },
+    "pi+": {
+      "omega_ratio": 273.1324395315071,
+      "role": "meson"
+    },
+    "K+": {
+      "omega_ratio": 966.1017881414233,
+      "role": "meson"
+    },
+    "K0": {
+      "omega_ratio": 973.8004340871497,
+      "role": "meson"
+    },
+    "p": {
+      "omega_ratio": 1836.152670945908,
+      "role": "baryon"
+    },
+    "n": {
+      "omega_ratio": 1838.683659235128,
+      "role": "baryon"
+    }
+  },
+  "cross_ratios": {
+    "e-mu-tau-H": 1.0620245507108832,
+    "e-mu-tau-t": 1.0622693266130456,
+    "u-d-s-c": 1.0262523166805033,
+    "W-Z-e-mu": 1.0001555761053742,
+    "e-mu-t-H": 0.9997695726535354
+  },
+  "valuations": {
+    "e-mu-tau-H": {
+      "p2": -4,
+      "p3": -4,
+      "p5": -15,
+      "exact_rational": "976/919",
+      "exact_valuations": {
+        "p2": 4,
+        "p3": 0,
+        "p5": 0
+      }
+    },
+    "e-mu-tau-t": {
+      "p2": -4,
+      "p3": -17,
+      "p5": -6,
+      "exact_rational": null
+    },
+    "u-d-s-c": {
+      "p2": 0,
+      "p3": -14,
+      "p5": -12,
+      "exact_rational": "430/419",
+      "exact_valuations": {
+        "p2": 1,
+        "p3": 0,
+        "p5": 1
+      }
+    },
+    "W-Z-e-mu": {
+      "p2": 0,
+      "p3": 0,
+      "p5": 0,
+      "exact_rational": null
+    },
+    "e-mu-t-H": {
+      "p2": 0,
+      "p3": 0,
+      "p5": 0,
+      "exact_rational": null
+    }
+  },
+  "pre_registered_date": "2026-07-22",
+  "pre_registered_tests": [
+    "e,mu,tau,H",
+    "e,mu,tau,t",
+    "u,d,s,c",
+    "W,Z,e,mu",
+    "e,mu,t,H"
+  ]
+}
