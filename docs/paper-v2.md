@@ -74,6 +74,18 @@ $$\text{CR}(\omega_1, \omega_2, \omega_3, \omega_4) = \frac{(\omega_1 - \omega_3
 
 This is the non-anthropocentric encoding of the mass spectrum: no reference particle, no chosen unit, no logarithmic base, invariant under the full projective group.
 
+### 2.3 Anharmonic Oscillator Hypothesis (Added 2026-07-22, corrected after methodological failure)
+
+If particle masses are not free parameters but overtones of a single fundamental frequency — analogous to transmon/Cooper-pair Josephson junction harmonic oscillators — then each Compton frequency would be:
+
+$$\omega_i = n_i \cdot \omega_0 - \frac{\alpha}{2} \cdot n_i \cdot (n_i - 1)$$
+
+where $\omega_0$ is the fundamental frequency, $\alpha$ is the anharmonicity (analogous to the charging energy $E_C$ in a transmon), and $n_i$ is the integer harmonic index for particle $i$.
+
+**A critical constraint, discovered only after an initial methodological failure (see §5.6):** with $\omega_0$, $\alpha$, and 18 independent integer indices $n_i$ all left free, this model has at least as many effective parameters as data points and can fit *any* dataset by construction — the degenerate limit $\alpha=0,\omega_0=1$ reduces to "round to the nearest integer," which trivially fits any sequence of positive reals. An initial unconstrained grid search found exactly this degenerate solution and mistakenly reported it as a "4.8× improvement over random." That result is retracted.
+
+To make this a genuine physical test rather than a tautology, the anharmonicity must be constrained a priori to the range actually realized in physical Josephson-junction devices: $\alpha_r \equiv \alpha/\omega_0 \in [0.01, 0.05]$, following measured transmon anharmonicities documented in the companion QNFO analysis "The Two-Level Lie" (DOI 10.5281/zenodo.21484345), which reports $\alpha_r = 1.9\%$ at the highest reported $E_J/E_C$ ratio for a functional transmon. Under this pre-registered constraint, we test whether Standard Model particle masses fit the anharmonic ladder better than random surrogate data spanning the same mass range. The result is reported in §5.6.
+
 ---
 
 ## 3. The Bruhat-Tits Tree: Geometric Mechanism
@@ -181,6 +193,27 @@ The remaining three cross-ratios do not approximate simple rationals at this pre
 ### 5.5 Null-model analysis
 
 The Dirichlet approximation theorem guarantees that for ANY real number $x$ and any integer $Q$, there exists a rational $p/q$ with $q \leq Q$ such that $|x - p/q| < 1/(Q(Q+1))$. For $Q = 1000$, this Dirichlet bound is $1.0 \times 10^{-6}$. Our observed errors ($5.76 \times 10^{-7}$ and $6.50 \times 10^{-7}$) are only marginally better than the Dirichlet guarantee (factor ~1.7). This is consistent with chance — no strong deviation from the null model.
+
+### 5.6 Harmonic Analysis Results — Retracted and Corrected
+
+An initial unconstrained grid search over $(\omega_0, \alpha)$ in the anharmonic oscillator model of §2.3 reported a "4.8× improvement over random" ($p<0.001$). **This result was retracted after red-team audit.** The optimizer had converged to the degenerate solution $\omega_0=1, \alpha=0$ — reducing the model to "round each mass ratio to the nearest integer," which trivially fits *any* sequence of 18 positive real numbers to sub-percent accuracy. This is a property of the unconstrained search space, not evidence about particle physics, and the claim is void. A companion phantom claim — that this result had been published to Zenodo under a new DOI — was also found false upon independent verification (the DOI returned HTTP 404) and is likewise retracted.
+
+**Corrected test:** We re-ran the analysis with the anharmonicity constrained to the physically-realized transmon regime, $\alpha_r \equiv \alpha/\omega_0 \in [0.01, 0.05]$ (per §2.3), using a grid of $\omega_0 \in [1,250]$, five discrete $\alpha_r$ values, and a bounded harmonic index $n \leq 200$. The best fit found:
+
+$$\omega_0^{\text{best}} = 250 \text{ (grid boundary)}, \quad \alpha_r^{\text{best}} = 0.01, \quad \text{RMS} = 107{,}500$$
+
+The optimizer saturated at the boundary of the allowed $\omega_0$ range — a sign the model wants an even larger fundamental scale than the constraint permits, itself evidence of poor fit rather than a hidden signal. Fit quality was bimodal: light particles ($e,u,d$) showed errors of 2,635–24,900%; middle-mass particles ($K^\pm, K^0, p, n, c, \tau, b$) fit passably (0.24–5.1%); heavy particles ($W,Z,H,t$) saturated the $n\leq200$ cap with 92–96% error.
+
+We compared this fit against 1000 surrogate datasets of log-uniform random masses spanning the identical range as the real Standard Model spectrum:
+
+| Metric | Value |
+|--------|-------|
+| Real particle data RMS | 107,500 |
+| Surrogate median RMS | 57,985 |
+| Improvement factor | **0.54×** (real data fits WORSE than random) |
+| Empirical $p$-value | **0.973** |
+
+**The anharmonic-oscillator hypothesis for Standard Model particle masses is decisively disconfirmed.** 97.3% of random surrogate mass datasets fit the constrained model better than the actual particle spectrum. The transmon/Cooper-pair analogy, while a reasonable physical question, does not survive a properly constrained statistical test. This negative result is reported in the interest of honest pre-registration discipline.
 
 ---
 

@@ -1,0 +1,35 @@
+{
+  "constraint": "alpha_r in [0.01, 0.05], max_n=200 (pre-registered, physically motivated)",
+  "real_best_fit": {
+    "w0": 250,
+    "alpha_r": 0.01,
+    "alpha": 2.5,
+    "rms": 107500.02106006317,
+    "assignments": {
+      "e": 1,
+      "mu": 1,
+      "tau": 15,
+      "u": 1,
+      "d": 1,
+      "s": 1,
+      "c": 10,
+      "b": 41,
+      "t": 100,
+      "W": 100,
+      "Z": 100,
+      "H": 100,
+      "pi0": 1,
+      "pi+": 1,
+      "K+": 4,
+      "K0": 4,
+      "p": 8,
+      "n": 8
+    }
+  },
+  "surrogate_null": {
+    "median_rms": 57984.5820005247,
+    "pct5_rms": 10891.520753717832,
+    "p_value": 0.973
+  },
+  "verdict": "NULL_CONSISTENT"
+}
