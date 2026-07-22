@@ -1,0 +1,15 @@
+{
+    "title": "The RG-Harmonic Isomorphism: Renormalization Group Similarities with Harmonic Quantum Mechanics — A Retrospective Evaluation of Planck, Einstein, and the Quantum Milestone Chain",
+    "creators": [{"name": "Rowan Brad Quni-Gudzinas", "orcid": "0009-0002-4317-5604"}],
+    "description": "The renormalization group (RG) and harmonic quantum mechanics share a deep structural isomorphism rooted in the spectral decomposition of self-adjoint operators under scale transformations. We identify five pillars of this isomorphism and apply it retrospectively to evaluate Planck's UV catastrophe resolution (1900), Einstein's photoelectric effect (1905), and ten subsequent QM/QFT/SM milestones from Bohr through the Higgs mechanism. A comprehensive Bayesian update across ten interpretative parameters shifts posterior weight decisively toward the harmonics-first interpretation, converging on the thesis that the harmonic oscillator is the universal grammar of quantum theory and the RG is its scale-space syntax.",
+    "access_right": "open",
+    "license": "CC-BY-4.0",
+    "upload_type": "publication",
+    "publication_type": "preprint",
+    "version": "1.0",
+    "related_identifiers": [
+        {"relation": "cites", "identifier": "10.5281/zenodo.21480756"},
+        {"relation": "cites", "identifier": "10.5281/zenodo.21484345"},
+        {"relation": "cites", "identifier": "10.5281/zenodo.20108536"}
+    ]
+}
