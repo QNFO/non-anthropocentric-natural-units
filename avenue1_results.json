@@ -1,0 +1,33 @@
+{
+  "avenue": "1",
+  "title": "Revisit v2.0 Hint with Updated CODATA/PDG Values",
+  "date": "2026-07-22",
+  "inputs": {
+    "me_MeV": 0.51099895069,
+    "mmu_MeV": 105.6583755,
+    "mtau_MeV": 1776.86,
+    "mH_MeV": 125200
+  },
+  "omega_ratios": {
+    "we": 1,
+    "wmu": 206.7682827,
+    "wtau": 3477.2282749,
+    "wH": 245010.28785
+  },
+  "cross_ratio": 1.062024550711,
+  "best_rational": "976/919",
+  "error": 6.1165e-7,
+  "dirichlet_bound": 9.99e-7,
+  "factor_vs_dirichlet": 1.63,
+  "valuations": {
+    "p2": 4,
+    "p3": 0,
+    "p5": 0
+  },
+  "v2_0_comparison": {
+    "error_v2_0": 5.76e-7,
+    "factor_v2_0": 1.7,
+    "rational_v2_0": "976/919"
+  },
+  "verdict": "HINT_PERSISTS — best rational unchanged, error marginally larger (6.12e-7 vs 5.76e-7) due to more precise m_e value (CODATA 2022 vs previously used 0.511 MeV). Factor vs Dirichlet slightly degraded (1.63× vs 1.7×). Still below the ≥10× threshold for claiming evidence."
+}
