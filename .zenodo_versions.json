@@ -1,13 +1,22 @@
 {
-  "concept_doi": "10.5281/zenodo.21480755",
-  "latest_deposit_id": "21480756",
-  "versions": [
+  "chains": [
     {
-      "doi": "10.5281/zenodo.21480756",
-      "deposit_id": "21480756",
-      "tag": "v1.0",
-      "published_at": "2026-07-21",
-      "files": ["paper.md", "paper.pdf", "README.md", "PROVENANCE-BUNDLE.zip"]
+      "concept_doi": "10.5281/zenodo.21480755",
+      "latest_deposit_id": "21480756",
+      "label": "v1.0 - Natural Units v1.0",
+      "versions": [
+        {"doi": "10.5281/zenodo.21480756", "deposit_id": "21480756", "tag": "v1.0", "published_at": "2026-07-21"}
+      ]
+    },
+    {
+      "concept_doi": "10.5281/zenodo.21485715",
+      "latest_deposit_id": "21491767",
+      "label": "v2.x - Compton Cross-Ratios",
+      "versions": [
+        {"doi": "10.5281/zenodo.21485556", "deposit_id": "21485556", "tag": "v2.0", "published_at": "2026-07-21", "title": "v2.0 preprint"},
+        {"doi": "10.5281/zenodo.21485716", "deposit_id": "21485716", "tag": "v2.3", "published_at": "2026-07-22", "title": "v2.3 CODATA 2022/PDG 2025 replication"},
+        {"doi": "10.5281/zenodo.21491767", "deposit_id": "21491767", "tag": "v2.3.1", "published_at": "2026-07-22", "title": "v2.3.1 CRITICAL-1 (sigma_CR fix) + CRITICAL-2 (Dirichlet reframe)"}
+      ]
     }
   ]
 }

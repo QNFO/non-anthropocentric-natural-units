@@ -4,7 +4,7 @@ author: "Rowan Brad Quni"
 date: "2026-07-22"
 license: "QNFO Unified License Agreement (QNFO-ULA)"
 status: "preprint"
-doi: "10.5281/zenodo.21485556"
+doi: "10.5281/zenodo.21491767"
 ---
 
 **Author:** Rowan Brad Quni | **Date:** 2026-07-22 (v2.3 update) | **License:** QNFO-ULA: https://legal.qnfo.org/
@@ -232,7 +232,7 @@ The results in §§5.2–5.3 were computed with the mass values available at the
 
 **Replication Results:**
 
-| Test | Cross-Ratio | v2.0 Value | v2.3 Value | Target | Deviation | Within ^{-5}$? |
+| Test | Cross-Ratio | v2.0 Value | v2.3 Value | Target | Deviation | Within $2\sigma_{\text{CR}}$? |
 |:-----|:------------|:-----------|:-----------|:-------|:----------|:------------|
 | T1 | $\text{CR}(e,\mu,\tau,H)$ | 1.0620245507 | 1.0620245507 | 976/919 | $5.76 \times 10^{-7}$ | YES |
 | T2 | $\text{CR}(e,\mu,\tau,t)$ | 1.0622693266 | 1.0622693266 | — | — | — |
@@ -254,13 +254,19 @@ We propagate the dominant uncertainties ($\tau$: $\pm 0.12$ MeV, $H$: $\pm 140$ 
 | $H + 1\sigma$ | 1.0620255478 | $1.51 \times 10^{-6}$ |
 | $H - 1\sigma$ | 1.0620235514 | $3.65 \times 10^{-7}$ |
 
-All $\pm 1\sigma$ variations remain within the $10^{-5}$ falsification window. The hint is robust to current experimental uncertainties.
+The combined 1$\sigma$ measurement uncertainty in the cross-ratio, propagated from the dominant PDG uncertainties:
 
-**Monte Carlo propagation** ($N = 10^5$, $\tau$ and $H$ drawn from Gaussian priors centered on PDG values with PDG widths): 97.7% of samples fall within $[976/919 - 10^{-5}, 976/919 + 10^{-5}]$, and 976/919 lies within the 95% confidence interval of the simulated distribution.
+$$\sigma_{\text{CR}} = \sqrt{\left(\frac{\partial\text{CR}}{\partial m_\tau}\sigma_{m_\tau}\right)^2 + \left(\frac{\partial\text{CR}}{\partial m_H}\sigma_{m_H}\right)^2} \approx 4.6 \times 10^{-6}$$
+
+is dominated by the tau mass uncertainty ($\pm 0.12$ MeV). The muon mass uncertainty ($\pm 2.3 \times 10^{-6}$ MeV) contributes negligibly ($\sim 10^{-11}$), and the electron mass uncertainty cancels in the cross-ratio (scale invariance). All $\pm 1\sigma$ mass variations produce cross-ratio shifts well within $1\sigma_{\text{CR}}$. The hint is robust to current experimental uncertainties.
+
+**Monte Carlo propagation** ($N = 10^5$, $\tau$ and $H$ drawn from Gaussian priors centered on PDG values with PDG widths): 97.7% of samples fall within $[976/919 - 10^{-5}, 976/919 + 10^{-5}]$, corresponding to approximately $\pm 2.2\sigma_{\text{CR}}$. The 976/919 target lies within the 95% confidence interval of the simulated distribution.
 
 **Null Model — How Surprising Is This?**
 
-To assess the look-elsewhere effect, we compute the best rational approximation ($q \leq 5000$) for all $\binom{12}{4} = 495$ quadruples from the twelve Standard Model masses ($e$, $\mu$, $\tau$, $u$, $d$, $s$, $c$, $b$, $t$, $W$, $Z$, $H$). 156 quadruples (31.5%) yield cross-ratios that approximate rational numbers with denominator $q \leq 5000$ and relative error $< 10^{-4}$. However, $\text{CR}(e,\mu,\tau,H)$ is unique among these for two reasons:
+The Dirichlet approximation theorem guarantees that for ANY real number $x$ and any integer $Q$, there exists a rational $p/q$ with $q \leq Q$ such that $|x - p/q| < 1/(Q(Q+1))$. For $Q = 5000$, this Dirichlet guarantee is $4.0 \times 10^{-8}$ — meaning every real number's best rational approximation with $q \leq 5000$ has error below this bound. Our $10^{-4}$ threshold is approximately 2500$\times$ more generous than the Dirichlet guarantee; under the null hypothesis, nearly all cross-ratios should clear this threshold. The observed 31.5% rate is therefore consistent with chance and carries no surprise — it provides no evidence against the null model.
+
+To assess the look-elsewhere effect across the SM mass spectrum, we compute the best rational approximation ($q \leq 5000$) for all $\binom{12}{4} = 495$ quadruples from the twelve Standard Model masses ($e$, $\mu$, $\tau$, $u$, $d$, $s$, $c$, $b$, $t$, $W$, $Z$, $H$). 156 quadruples (31.5%) yield cross-ratios that approximate rational numbers with denominator $q \leq 5000$ at the generous relative error threshold of $< 10^{-4}$. The rate of 31.5% is unremarkable under the null model. The significance of $\text{CR}(e,\mu,\tau,H)$ does not derive from the frequency of rational approximations but from two specific structural properties:
 
 1. **Minimal denominator:** 976/919 (denominator 919) is the smallest-denominator rational approximation among the 156 hits. The next-simplest rational is 1815/1709 (denominator 1709, error $2.36 \times 10^{-8}$), but the minimizing-denominator criterion selects 976/919.
 
@@ -271,7 +277,7 @@ To assess the look-elsewhere effect, we compute the best rational approximation 
 
 ## 6. Falsifiability Conditions
 
-**[F1]** $\text{CR}(e,\mu,\tau,H) = 976/919$ is exactly correct. Falsified if an independent precision measurement of the muon, tau, or Higgs mass shifts the cross-ratio outside $[976/919 - 10^{-5}, 976/919 + 10^{-5}]$.
+**[F1]** $\text{CR}(e,\mu,\tau,H) = 976/919$ is exactly correct. Falsified if an independent precision measurement of the muon, tau, or Higgs mass shifts the cross-ratio by more than $2\sigma_{\text{CR}}$ ($\approx 9.2 \times 10^{-6}$) from 976/919, where $\sigma_{\text{CR}}$ is derived from the PDG measurement uncertainties propagated through the cross-ratio formula (currently $\sigma_{\text{CR}} \approx 4.6 \times 10^{-6}$, dominated by $\sigma_{m_\tau} = \pm 0.12$ MeV).
 
 **[F2]** $\text{CR}(u,d,s,c) = 430/419$ is exactly correct. Falsified if lattice QCD determinations of quark masses shift the cross-ratio outside the error envelope.
 
