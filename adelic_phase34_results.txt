@@ -1,0 +1,126 @@
+﻿================================================================================
+PHASE 3.5: DARK-MATTER–BARYON RATIO FROM THE ADELIC PRODUCT FORMULA
+================================================================================
+
+  Planck 2018 (TT,TE,EE+lowE):
+    Ωc h² = 0.12000 ± 0.00120
+    Ωb h² = 0.02237 ± 0.00015
+    Ωc/Ωb  = 5.3643 ± 0.0646
+
+  Rational Candidate Tests:
+       Ratio    Value     Err(σ) Significance Prime Factors
+  -------------------------------------------------------
+  27/5          5.400     0.0357       0.55σ ✓ (<1σ)  3³/5
+  43/8          5.375     0.0107       0.17σ ✓ (<1σ)  43/2³
+  11/2          5.500     0.1357       2.10σ ✗ (2.1σ) 11/2
+  16/3          5.333     0.0313       0.49σ ✓ (<1σ)  2⁴/3
+  22/4          5.500     0.1357       2.10σ ✗ (2.1σ) 2·11/2²
+  38/7          5.429     0.0647       1.00σ ~ (1-2σ) 2·19/7
+  7/1          7.000     1.6357      25.33σ ✗ (25.3σ) 7
+  49/9          5.444     0.0797       1.23σ ~ (1-2σ) 7²/3²
+  54/10         5.400     0.0357       0.55σ ✓ (<1σ)  2·3³/(2·5)
+
+  === ADELIC PREDICTION: 27/5 = 3³/5 ===
+  Ωc/Ωb(pred) = 5.4000
+  Ωc/Ωb(obs)  = 5.3643 ± 0.0646
+  Difference   = 0.0357 (0.67%)
+  Significance  = 0.55σ
+  For 3σ: need σ_ratio ≤ 0.0119 (currently 0.0646)
+  For 5σ: need σ_ratio ≤ 0.0071 (currently 0.0646)
+  Required precision improvement: 5.4× for 3σ, 9.1× for 5σ
+
+================================================================================
+PHASE 3.1: LOG-PERIODIC POWER SPECTRUM TEMPLATE
+================================================================================
+
+  Active primes S = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 41, 43, 47, 53, 59, 61, 67, 71, 73, 89, 97}
+  |S| = 22
+
+  Oscillation parameters for key primes:
+   Prime    ln(p)  f_p=1/ln(p)   Period in log₁₀(k) k-pivot scale ratio
+  ----------------------------------------------------------------------
+       2   0.6931       1.4427               0.3010            k → p·k
+       3   1.0986       0.9102               0.4771            k → p·k
+       5   1.6094       0.6213               0.6990            k → p·k
+       7   1.9459       0.5139               0.8451            k → p·k
+      11   2.3979       0.4170               1.0414            k → p·k
+      13   2.5649       0.3899               1.1139            k → p·k
+      17   2.8332       0.3530               1.2304            k → p·k
+      19   2.9444       0.3396               1.2788            k → p·k
+      23   3.1355       0.3189               1.3617            k → p·k
+      29   3.3673       0.2970               1.4624            k → p·k
+      43   3.7612       0.2659               1.6335            k → p·k
+      67   4.2047       0.2378               1.8261            k → p·k
+     163   5.0938       0.1963               2.2122            k → p·k
+
+  CMB accessible: k  in  [10⁻³, 0.3] Mpc⁻¹ → 2.5 decades in log₁₀
+  Oscillations in CMB range:
+    p= 2: 8.2 oscillations in CMB range → ✓ DETECTABLE
+    p= 3: 5.2 oscillations in CMB range → ✓ DETECTABLE
+    p= 5: 3.5 oscillations in CMB range → ✓ DETECTABLE
+    p= 7: 2.9 oscillations in CMB range → ~ marginal
+    p=11: 2.4 oscillations in CMB range → ~ marginal
+    p=13: 2.2 oscillations in CMB range → ~ marginal
+    p=17: 2.0 oscillations in CMB range → ~ marginal
+    p=19: 1.9 oscillations in CMB range → ~ marginal
+    p=23: 1.8 oscillations in CMB range → ~ marginal
+    p=29: 1.7 oscillations in CMB range → ~ marginal
+    p=43: 1.5 oscillations in CMB range → ~ marginal
+
+================================================================================
+PHASE 3.4: HUBBLE TENSION AS ADELIC PRODUCT-FORMULA CORRECTION
+================================================================================
+
+  H0(early, Planck) = 67.4 ± 0.5 km/s/Mpc
+  H0(late, SH0ES)   = 73.0 ± 1.0 km/s/Mpc
+  H0(late)/H0(early) = 1.0831
+  Tension: 5.0σ
+
+  Single-prime corrections to ratio 1.0831:
+    p= 5: 1 + 1/5 = 1.2000 (err 10.8%),  1 - 1/5 = 0.8000 (err 26.1%)
+    p= 7: 1 + 1/7 = 1.1429 (err 5.5%),  1 - 1/7 = 0.8571 (err 20.9%)
+    p=11: 1 + 1/11 = 1.0909 (err 0.7%),  1 - 1/11 = 0.9091 (err 16.1%)
+    p=13: 1 + 1/13 = 1.0769 (err 0.6%),  1 - 1/13 = 0.9231 (err 14.8%)
+    p=17: 1 + 1/17 = 1.0588 (err 2.2%),  1 - 1/17 = 0.9412 (err 13.1%)
+    p=19: 1 + 1/19 = 1.0526 (err 2.8%),  1 - 1/19 = 0.9474 (err 12.5%)
+    p=23: 1 + 1/23 = 1.0435 (err 3.7%),  1 - 1/23 = 0.9565 (err 11.7%)
+    p=29: 1 + 1/29 = 1.0345 (err 4.5%),  1 - 1/29 = 0.9655 (err 10.9%)
+    p=31: 1 + 1/31 = 1.0323 (err 4.7%),  1 - 1/31 = 0.9677 (err 10.6%)
+    p=37: 1 + 1/37 = 1.0270 (err 5.2%),  1 - 1/37 = 0.9730 (err 10.2%)
+    p=41: 1 + 1/41 = 1.0244 (err 5.4%),  1 - 1/41 = 0.9756 (err 9.9%)
+    p=43: 1 + 1/43 = 1.0233 (err 5.5%),  1 - 1/43 = 0.9767 (err 9.8%)
+    p=47: 1 + 1/47 = 1.0213 (err 5.7%),  1 - 1/47 = 0.9787 (err 9.6%)
+    p=53: 1 + 1/53 = 1.0189 (err 5.9%),  1 - 1/53 = 0.9811 (err 9.4%)
+    p=59: 1 + 1/59 = 1.0169 (err 6.1%),  1 - 1/59 = 0.9831 (err 9.2%)
+    p=61: 1 + 1/61 = 1.0164 (err 6.2%),  1 - 1/61 = 0.9836 (err 9.2%)
+    p=67: 1 + 1/67 = 1.0149 (err 6.3%),  1 - 1/67 = 0.9851 (err 9.0%)
+
+  Product candidates:
+    13/12 = 1.0833 (err 0.02%)
+    (1+1/11) = 1.0909 (err 0.72%) — but too simple
+    (1+1/12) = 1.0833 (err 0.02%) — but too simple
+    (1+1/17) = 1.0588 (err 2.24%) — but too simple
+    (1+1/19) = 1.0526 (err 2.81%) — but too simple
+    (1+1/23) = 1.0435 (err 3.66%) — but too simple
+
+  Two-prime products:
+    (1+1/7)·(1-1/19) = 1.0827 (err 0.035%)
+    (1+1/23)·(1+1/29) = 1.0795 (err 0.335%)
+
+================================================================================
+PHASE 4.1: MUON g-2 ANOMALY — PRIME-SUM HYPOTHESIS
+================================================================================
+python : Traceback (most recent call last):
+At line:1 char:260
++ ... anthropocentric-natural-units; python _adelic_phase34.py 2>&1 | Out-F ...
++                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\LENOVO\Projects\non-anthropocentric-natural-units\_adelic_phase34.py", line 218, in <module>
+    sum_log_mass_primes = sum(math.log(p) for p in mass_idele_primes)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\Projects\non-anthropocentric-natural-units\_adelic_phase34.py", line 218, in <genexpr>
+    sum_log_mass_primes = sum(math.log(p) for p in mass_idele_primes)
+                              ^^^^^^^^^^^
+TypeError: must be real number, not str
